@@ -1284,11 +1284,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj",
+      "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj",
       "projectName": "NorthwindContextLib",
-      "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj",
+      "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj",
       "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindContextLib\\obj\\",
+      "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindContextLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1305,8 +1305,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {
-              "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj"
+            "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {
+              "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj"
             }
           }
         }

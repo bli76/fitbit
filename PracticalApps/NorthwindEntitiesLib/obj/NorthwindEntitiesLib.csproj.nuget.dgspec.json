@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {}
+    "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {
+    "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
         "projectName": "NorthwindEntitiesLib",
-        "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
+        "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\obj\\",
+        "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",

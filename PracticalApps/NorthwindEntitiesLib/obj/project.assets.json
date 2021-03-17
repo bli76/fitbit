@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
+      "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
       "projectName": "NorthwindEntitiesLib",
-      "projectPath": "c:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
+      "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\NorthwindEntitiesLib.csproj",
       "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindEntitiesLib\\obj\\",
+      "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindEntitiesLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1614,11 +1614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindMvc\\NorthwindMvc.csproj",
+      "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindMvc\\NorthwindMvc.csproj",
       "projectName": "NorthwindMvc",
-      "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindMvc\\NorthwindMvc.csproj",
+      "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindMvc\\NorthwindMvc.csproj",
       "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindMvc\\obj\\",
+      "outputPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1635,8 +1635,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj": {
-              "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj"
+            "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj": {
+              "projectPath": "C:\\Users\\krist\\Documents\\School\\12th Grade\\App Development\\fitpets\\PracticalApps\\NorthwindContextLib\\NorthwindContextLib.csproj"
             }
           }
         }
