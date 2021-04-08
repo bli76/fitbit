@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (!SignInManager.IsSignedIn(User))
+{
+    <partial name ="_HeaderPartial" />
+    <div class="text-center" style="font-size: 18px">
+        <p>
+            <a class="button" asp-area="Identity" asp-page="/Account/Login">Log In</a>
+            &emsp;&emsp;
+            <a class="button" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </p>
+        <!-- Homepage -->
+        <p>
+            FitPETZ is a kid-friendly, inclusive, competitive exercise app where users can earn in-game currency to redeem rewards through exercises, 
+            and the best part is that you get a pet!
+        </p>
+        <p>
+            The in-game currency, called Petokens, can be earned through exercise challenges that can be completed individually or in teams. 
+            Petokens can be redeemed for sponsored items, in-game customizations, and virtual pets at store locations scattered throughout the surrounding area. 
+            Virtual pets can serve as exercise companions as you complete challenges. 
+        </p>
+        <p>
+            The multiplayer aspect allows users to interact with friends while going on walks. 
+            The app contains a world map feature that displays the location and current activity of your friends so you can complete exercises together. 
+        </p>
+        <p>
+            FitPETZ addresses the lack of accommodations for the disabled community in other exercise apps by including white noise, 
+            voice-overs, and a four-quadrant interface for those with cognitive and visual impairments.
+        </p>
+        <p>
+            Our goal is to increase overall motivation to exercise, because <b>your next fitness trainer isn’t human, it’s a pet!</b>
+        </p>
+    </div>
+}
+else
+{
+    <br>
+    <div id="logout">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button  type="submit" class="button">Logout</button>
+        </form>
+    </div>
+    <partial name ="_HeaderPartial" />
+    <div class="row">
+        <div class="challenge column">
+            <h1>Challenges</h1>
+            <p>Sample Text</p>
+            <h2>Weekly Goal</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>Progress</th>
+                    <td class="value">24%</td>
+                </tr>
+                <tr>
+                    <th>Reward</th>
+                    <td class="value">+100 Petokens</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="map column">
+            <h1>Map</h1>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="~/images/globe.png" alt="map" id="globe" class="center">
+            </a>
+        </div>
+        <div class="leaderboard column">
+            <h1>Leaderboard stuff</h1>
+        </div>
+    </div>
+}
