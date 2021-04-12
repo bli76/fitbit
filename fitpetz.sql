@@ -1,17 +1,17 @@
 CREATE TABLE Team(
-    IDtag int,
+    ID int,
     Motto varchar(50),
-    Descriptionof varchar(100),
-    Typeof nchar(10)
+    Description varchar(100),
+    Type nchar(10)
 );
 
 CREATE TABLE User(
-    Idusername nchar(10),
+    ID nchar(10),
     TeamID int,
     Email varchar(50),
     Age int,
-    Heightof int, 
-    Weightof int, 
+    Height int, 
+    Weight int, 
     Gender nchar(10),
     Petokens int,
     WeeklyPoints int
@@ -30,19 +30,18 @@ CREATE TABLE Challenge(
 );
 
 CREATE TABLE Pet(
-    Id int,
-    PlayerIDowner int, 
-    NameOf varchar(50),
+    ID int,
+    PlayerID int, 
+    Name varchar(50),
     Animal varchar(50),
     Birthday smalldatetime
 );
 
 CREATE TABLE ChallengeAssignments(
-    Id int,
+    ID int,
     Title varchar(50),
-    Descriptionof varchar(100),
+    Description varchar(100),
     Quantity int,
     Duration smalldatetime,
     Reward int
 );
-
