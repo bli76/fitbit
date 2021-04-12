@@ -1,0 +1,14 @@
+Views/Home/Index.cshtml || Homepage
+
+Views/Shared/_Layout.cshtml || Navigation bar
+
+Views/_LoginPartial.cshtml || Login and Register functionality
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager           || Determine whether user is signed in and display content accordingly
+@if (SignInManager.IsSignedIn(User))
+
+Major Changes:
+1. Homepage changes based on whether you're logged in
+2. Navigation bar has been commented out
