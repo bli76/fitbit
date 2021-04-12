@@ -10,5 +10,6 @@ namespace FitPETZ.Data
         public DbSet<Team> Teams { get; set; }
         public DbSet<Pet> Pets { get; set; }
         public DbSet<Challenge> Challenges { get; set; }
+        public DbSet<ChallengeAssignments> ChallengeAssignments { get; set; }
     }
 }
