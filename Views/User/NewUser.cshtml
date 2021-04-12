@@ -1,0 +1,51 @@
+@model FitPETZ.Models.User
+
+<form method="POST" action="/user/newuser">
+    <table style="width:300px">
+        <tr>
+            <td class="left-text">
+                <label for="Username">Username</label>
+            </td>
+            <td class="right-input">
+                <input name="Username" />
+            </td>
+        </tr>
+        <tr>
+            <td class="left-text">
+                <label for="Age">Age</label>
+            </td>
+            <td class="right-input">
+                <input name="Age" />
+            </td>
+        </tr>
+        <tr>
+            <td class="left-text">
+                <label for="Height">Height</label>
+            </td>
+            <td class="right-input">
+                <input name="Height" />
+            </td>
+        </tr>
+        <tr>
+            <td class="left-text">
+                <label for="Weight">Weight</label>
+            </td>
+            <td class="right-input">
+                <input name="Weight" />
+            </td>
+        </tr>
+        <tr>
+            <td class="left-text">
+                <label for="Gender">Gender</label>
+            </td>
+            <td class="right-input">
+                <select name="Gender" >
+                    <option value='M'>Male</option>
+                    <option value='F'>Female</option>
+                    <option value='X'>Other</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" />
+</form>

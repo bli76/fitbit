@@ -84,6 +84,17 @@ body {
   clear: both;
 }
 
+/* Two column layout for homepage
+-------------------------------------------------- */
+.left-text {
+  width: 30%;
+  text-align: left;
+}
+.right-input {
+  width: 70%;
+  text-align: right;
+}
+
 /* Other
 -------------------------------------------------- */
 
@@ -95,6 +106,11 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#petoken{
+  width: 80%;
+  height: auto;
 }
 
 #globe {
