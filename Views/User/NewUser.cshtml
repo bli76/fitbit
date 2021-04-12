@@ -1,13 +1,14 @@
 @model FitPETZ.Models.User
 
+<partial name ="_HeaderPartial" />
 <form method="POST" action="/user/newuser">
     <table style="width:300px">
         <tr>
             <td class="left-text">
-                <label for="Username">Username</label>
+                <label for="ID">Username</label>
             </td>
             <td class="right-input">
-                <input name="Username" />
+                <input name="ID" />
             </td>
         </tr>
         <tr>
@@ -49,3 +50,17 @@
     </table>
     <input type="submit" />
 </form>
+
+@if (Model != null)
+{
+    <h2>Submitted User</h2>
+    <hr />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>Model.ID</dt>
+            <dd>@Model.ID</dd>
+            <dt>Model.Gender</dt>
+            <dd>@Model.Gender</dd>
+        </dl>
+    </div>
+}
