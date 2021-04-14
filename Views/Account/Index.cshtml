@@ -1,0 +1,16 @@
+<br>
+<partial name="_HeaderPartialL" />
+<div class="login">
+    <h1>Log In</h1><br>
+    <form method="POST" action="/Account/Index">
+        <label class="form-label" for="ID">Email</label><br>
+        <input class="form-input" name="ID" size="35"><br><br>
+        <label class="form-label" for="Password">Password</label><br>
+        <input type="password" class="form-input" name="Password" size="35"><br><br>
+        <input type="submit" value="Log In">
+    </form>
+    <br>
+    <a asp-action="UserInfo">Forgot your password?</a>
+    <br><br>
+    <a asp-action="Register">Create a new account</a>
+</div>

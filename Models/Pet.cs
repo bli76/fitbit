@@ -9,6 +9,6 @@ namespace FitPETZ.Models
         public string Name { get; set; }
         public string Animal { get; set; }
         public DateTime Birthday { get; set; }
-        public User User { get; set; }
+        public User Users { get; set; }
     }
 }

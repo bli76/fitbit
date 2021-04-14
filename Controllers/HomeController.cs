@@ -24,7 +24,7 @@ namespace FitPETZ.Controllers
 
         public IActionResult Index()
         {   
-            IEnumerable<ChallengeAssignments> challenges = db.ChallengeAssignments
+            var challenges = db.ChallengeAssignments
                 .AsEnumerable();
 
             var r = new Random();

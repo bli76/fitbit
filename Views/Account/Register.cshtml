@@ -1,0 +1,16 @@
+<br>
+<partial name="_HeaderPartialL" />
+<div class="login">
+    <h1>Create a New Account</h1><br>
+    <form method="POST" action="/Account/Register" onsubmit="return checkPassword(this)">
+        <label class="form-label" for="ID">Email</label><br>
+        <input class="form-input" name="ID" size="35"><br><br>
+        <label class="form-label" for="Password">Password</label><br>
+        <input type="password" class="form-input" name="Password" size="35"><br><br>
+        <label class="form-label" for="PasswordConfirm">Confirm Password</label><br>
+        <input type="password" class="form-input" name="PasswordConfirm" size="35"><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <br>
+    <a asp-action="Index">Already have an account?</a>
+</div>

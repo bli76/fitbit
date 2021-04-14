@@ -6,6 +6,7 @@ namespace FitPETZ.Models
     {
         public string ID { get; set; }
         public string? TeamID { get; set; }
+        public string UserIdentityID { get; set; }
         public int Age { get; set; }
         public int Height { get; set; }
         public int Weight { get; set; }
@@ -14,6 +15,7 @@ namespace FitPETZ.Models
         public int? WeeklyPoints { get; set; } = 0;
         public Team Team { get; set; }
         public Pet Pet { get; set; }
+        public UserIdentity UserIdentity { get; set; }
         public ICollection<Challenge> Challenges { get; set; }
     }
 }

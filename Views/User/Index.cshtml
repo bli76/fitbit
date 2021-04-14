@@ -1,3 +1,72 @@
+@model FitPETZ.Models.UserIndexViewModel
+
+<p><img src="~/images/Petoken.png" id="coin" alt="Tokens">@Model.User.Petokens</p>
 <partial name ="_HeaderPartial" />
-<p><a asp-controller="User" asp-action="NewUser">Add new users</a></p>
-<p><a asp-controller="User" asp-action="SelectUser">Select user to view</a></p>
+<div class="row">
+    <div class="challenge column">
+        <h1>Challenges</h1>
+        @foreach (var item in Model.Challenges)
+        {
+            <table>
+                <tr>
+                    <th>
+                        @item.Description
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        @item.Reward Petokens
+                    </td>
+                </tr>
+            </table>
+            <br>
+        }
+        <!--
+        <h2>Weekly Goal</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Progress</th>
+                <td class="value">24%</td>
+            </tr>
+            <tr>
+                <th>Reward</th>
+                <td class="value">+100 Petokens</td>
+            </tr>
+        </table> 
+        -->
+        
+    </div>
+    <div class="map column">
+        <h1>Map</h1>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <img src="~/images/globe.png" alt="map" id="globe" class="center">
+        </a>
+    </div>
+    <div class="leaderboard column">
+        <h1>Teams</h1>
+        @if (Model.User.TeamID == null)
+        {
+            <p>Looks like you haven't joined a team yet...</p>
+            @foreach (var t in Model.Teams)
+            {
+                <table style="width:100%">
+                    <tr>
+                        <th>@t.ID</th>
+                        <td class="value"><i>@t.Motto</i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">@t.Description</td>
+                    </tr>
+                </table> 
+            }
+        }
+        else
+        {
+            @foreach (var u in Model.Users)
+            {
+                <p>@u.ID</p>
+            }
+        }
+    </div>
+</div>
+<img src="~/images/@(Model.Pet.Animal).png" alt="@Model.Pet.Animal">

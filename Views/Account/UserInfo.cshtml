@@ -1,0 +1,34 @@
+<br>
+<partial name="_HeaderPartialL" />
+<div class="login">
+    <h1>Welcome to FitPETZ!</h1><br>
+    <form method="POST" action="/Account/UserInfo">
+        <label class="form-label" for="ID">&ensp;Username</label><br>
+        <input class="form-input" name="ID" size="48"><br><br>
+        <table>
+            <tr>
+                <td>
+                    <label class="form-label" for="Age">&ensp;Age</label><br>
+                    <input class="form-input" name="Age" size="10">
+                </td>
+                <td>
+                    <label class="form-label" for="Height">&ensp;Height (cm)</label><br>
+                    <input class="form-input" name="Height" size="10">
+                </td>
+                <td>
+                    <label class="form-label" for="Weight">&ensp;Weight (kg)</label><br>
+                    <input class="form-input" name="Weight" size="10">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label class="form-label" for="Gender">&ensp;Gender</label><br>
+        <select class="form-input" name="Gender">
+            <option value='M'>Male</option>
+            <option value='F'>Female</option>
+            <option value='X'>Other</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>

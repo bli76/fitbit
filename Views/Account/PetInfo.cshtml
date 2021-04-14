@@ -1,0 +1,30 @@
+<partial name="_HeaderPartialL" />
+<div class="login">
+    <h1>Choose your pet!</h1>
+    <form method="POST" action="/Account/PetInfo">
+        <label class="form-label" for="Name">Name</label><br>
+        <input class="form-input" name="Name" size="35"><br><br>
+        <label class="form-label" for="Animal">Animal</label><br>
+        <select class="form-input" name="Animal">
+            <option value="alligator">
+                <img src="~/images/alligator.png" alt="Alligator">
+            </option>
+            <option value="bird">
+                <img src="~/images/bird.png" alt="Bird">
+            </option>
+            <option value="cat">
+                <img src="~/images/cat.png" alt="Cat">
+            </option>
+            <option value="dog">
+                <img src="~/images/dog.png" alt="Dog">
+            </option>
+            <option value="fish">
+                <img src="~/images/fish.png" alt="Fish">
+            </option>
+            <option value="hamster">
+                <img src="~/images/hamster.png" alt="Hamster">
+            </option>
+        </select>
+        <input type="submit" value="Adopt!">
+    </form>
+</div>

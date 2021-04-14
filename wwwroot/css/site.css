@@ -95,6 +95,18 @@ body {
   text-align: right;
 }
 
+/* Form styling
+-------------------------------------------------- */
+.form-label {
+  font-size: 16px;
+}
+
+.form-input {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 /* Other
 -------------------------------------------------- */
 
@@ -102,10 +114,15 @@ body {
   text-align: right;
 }
 
-.center {
+.center-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center-div {
+  margin: auto;
+  width: 30%;
 }
 
 #globe {
@@ -136,5 +153,22 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 
 #petoken{
   width: 80%;
+  height: auto;
+}
+
+.imglogin {
+  float: left;
+  padding: 75px 50px;
+  width: 45%;
+}
+
+.login {
+  float: left;
+  padding: 0px 100px;
+  width: 55%;
+}
+
+#coin {
+  width: 50px;
   height: auto;
 }
