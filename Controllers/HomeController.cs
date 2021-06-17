@@ -24,13 +24,7 @@ namespace FitPETZ.Controllers
 
         public IActionResult Index()
         {   
-            var challenges = db.ChallengeAssignments
-                .AsEnumerable();
-
-            var r = new Random();
-            var model = challenges.OrderBy(order => r.Next()).Take(4);
-            
-            return View(model);
+            return View();
         }
 
         public IActionResult Privacy()
