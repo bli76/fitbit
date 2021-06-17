@@ -1,6 +1,5 @@
 @model FitPETZ.Models.UserIndexViewModel
 
-<p><img src="~/images/Petoken.png" id="coin" alt="Tokens">@Model.User.Petokens</p>
 <partial name ="_HeaderPartial" />
 <div class="row">
     <div class="challenge column">
@@ -25,11 +24,11 @@
                 </tr>
                 <tr>
                     <td>
+                        <br>
                         @Html.ActionLink("Complete!", "CompleteChallenge", "User", new { @item.ID }, new { @class="button" })
                     </td>
                 </tr>
             </table>
-            <br>
             <br>
             <br>
         }
@@ -49,10 +48,16 @@
         
     </div>
     <div class="map column">
-        <h1>Map</h1>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <img src="~/images/globe.png" alt="map" id="globe" class="center">
-        </a>
+        <h1 style="text-align:center">Map</h1><br>
+        <p style="text-align:center">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="~/images/globe.png" alt="map" id="globe">
+            </a>
+        </p><br><br>
+        <h3 style="text-align:center">@Model.Pet.Name</h3>
+        <p style="text-align:center">
+            <img src="~/images/@(Model.Pet.Animal).png" alt="@Model.Pet.Animal" id="pet">
+        </p>
     </div>
     <div class="leaderboard column">
         <h1>Teams</h1>
@@ -79,6 +84,7 @@
                 <p>@u.ID</p>
             }
         }
+        <br><br><br>
+        <p style="text-align:right">@Model.User.Petokens<img src="~/images/Petoken.png" id="coin" alt="Tokens"></p>
     </div>
 </div>
-<img src="~/images/@(Model.Pet.Animal).png" alt="@Model.Pet.Animal">
