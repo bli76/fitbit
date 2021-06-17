@@ -74,8 +74,19 @@ body {
 -------------------------------------------------- */
 .column {
   float: left;
-  width: 33%;
   padding: 0px 30px;
+}
+
+.challenge {
+  width: 20%;
+}
+
+.map {
+  width: 35%;
+}
+
+.leaderboard {
+  width: 45%;
 }
 
 .row:after {
@@ -126,7 +137,7 @@ body {
 }
 
 #globe {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -171,4 +182,9 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 #coin {
   width: 50px;
   height: auto;
+}
+
+#complete {
+  vertical-align: middle;
+  text-align: right;
 }
