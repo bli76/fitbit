@@ -1,0 +1,20 @@
+<partial name ="_HeaderPartialL" />
+
+<div class="login">
+    <h1>Create New Team</h1>
+    <form method="POST" action="Create">
+        <label class="form-label" for="ID">Tag</label><br>
+        <input class="form-input" name="ID" maxlength="5" size="35"><br><br>
+        <label class="form-label" for="Motto">Motto</label><br>
+        <input class="form-input" name="Motto" size=""><br><br>
+        <label class="form-label" for="Description">Description</label><br>
+        <textarea class="form-input" name="Description" maxlength="500" cols="50" rows="4"></textarea><br><br>
+        <label class="form-label" for="Type">Type</label><br>
+        <select class="form-input" name="Type">
+            <option value='O'>Open</option>
+            <option value='I'>Invite Only</option>
+            <option value='C'>Closed</option>
+        </select><br><br>
+        <input class="button" type="submit" value="Create!">&emsp;<span><img src="~/images/Petoken.png" id="coin" alt="Tokens"> 50</span>
+    </form>
+</div>

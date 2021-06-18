@@ -1,0 +1,29 @@
+@model FitPETZ.Models.TeamViewModel
+<partial name ="_HeaderPartial" />
+
+<form method="GET" action="/Team/Search">
+    <label class="form-label" for="tag">Search Teams By Tag</label><br>
+    <input class="form-input" name="tag" size="50">&emsp;
+    <input type="submit" value="Search">
+</form><br>
+@if (Model.Teams.Count == 0)
+{
+    <p><i>No teams found.</i></p>
+}
+else
+{
+    @foreach (var t in Model.Teams)
+    {
+        <a class="team" asp-action="Index" asp-route-ID="@t.ID">
+            <table style="width:100%">
+                <tr>
+                    <th>@t.ID</th>
+                    <td class="value"><i>@t.Motto</i></td>
+                </tr>
+                <tr>
+                    <td colspan="2">@t.Description</td>
+                </tr>
+            </table>
+        </a><br>
+    }
+}

@@ -1,0 +1,26 @@
+@model FitPETZ.Models.Team
+<partial name ="_HeaderPartial" />
+
+<p style="text-align:center">
+    <a class="button" asp-action="Join" asp-route-ID="@Model.ID">Join!</a>
+</p>
+
+<table style="width:100%">
+    <tr>
+        <th style="width:50%">Player Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Gender</th>
+    </tr>
+    @foreach (var u in Model.Users)
+    {
+        <tr>
+            <td>@u.ID</td>
+            <td>@u.Age</td>
+            <td>@u.Height</td>
+            <td>@u.Weight</td>
+            <td>@u.Gender</td>
+        </tr>
+    }
+</table>
