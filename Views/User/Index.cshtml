@@ -25,66 +25,58 @@
                 <tr>
                     <td>
                         <br>
-                        @Html.ActionLink("Complete!", "CompleteChallenge", "User", new { @item.ID }, new { @class="button" })
+                        <a class="button" asp-action="CompleteChallenge" asp-route-chID="@item.ID">Complete!</a>
                     </td>
                 </tr>
             </table>
             <br>
             <br>
         }
-        <!--
-        <h2>Weekly Goal</h2>
-        <table style="width:100%">
-            <tr>
-                <th>Progress</th>
-                <td class="value">24%</td>
-            </tr>
-            <tr>
-                <th>Reward</th>
-                <td class="value">+100 Petokens</td>
-            </tr>
-        </table> 
-        -->
-        
     </div>
     <div class="map column">
         <h1 style="text-align:center">Map</h1><br>
         <p style="text-align:center">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <img src="~/images/globe.png" alt="map" id="globe">
             </a>
         </p><br><br>
         <h3 style="text-align:center">@Model.Pet.Name</h3>
         <p style="text-align:center">
             <img src="~/images/@(Model.Pet.Animal).png" alt="@Model.Pet.Animal" id="pet">
-        </p>
+        </p><br>
+        <p style="text-align:center"><img src="~/images/Petoken.png" id="coin" alt="Tokens"></p>
+        <p style="text-align:center">@Model.User.Petokens</p>
+        
     </div>
     <div class="leaderboard column">
         <h1>Teams</h1>
         @if (Model.User.TeamID == null)
         {
-            <p>Looks like you haven't joined a team yet...</p>
-            @foreach (var t in Model.Teams)
-            {
-                <table style="width:100%">
-                    <tr>
-                        <th>@t.ID</th>
-                        <td class="value"><i>@t.Motto</i></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">@t.Description</td>
-                    </tr>
-                </table> 
-            }
+            <p>Looks like you haven't joined a team yet...</p><br>
+            <a class="button" asp-controller="Team" asp-action="Search">Join Team</a><br><br>
+            <a class="button" asp-controller="Team" asp-action="Create">Create Team</a>
         }
         else
         {
-            @foreach (var u in Model.Users)
-            {
-                <p>@u.ID</p>
-            }
+            <table style="width:100%">
+                <tr>
+                    <th>@Model.Team.ID</th>
+                    <td class="value"><i>@Model.Team.Motto</i></td>
+                </tr>
+                <tr>
+                    <td style="word-wrap:break-word" colspan="2">@Model.Team.Description</td>
+                </tr>
+            </table><br>
+            <p><b>Members</b></p>
+            <ol id="two-columns">
+                @foreach (var u in Model.Users)
+                {
+                    <li>@u.ID</li>
+                }
+            </ol>
+            <a class="button" asp-controller="Team" asp-action="Index" asp-route-ID="@Model.Team.ID">Team Details</a><span>&emsp;</span>
+            <a class="button" asp-controller="Team" asp-action="Search">Team Search</a><br><br>
+            <a class="button" asp-controller="Team" asp-action="LeaveTeam" asp-route-ID="@Model.Team.ID">Leave Team</a>
         }
-        <br><br><br>
-        <p style="text-align:right">@Model.User.Petokens<img src="~/images/Petoken.png" id="coin" alt="Tokens"></p>
     </div>
 </div>
