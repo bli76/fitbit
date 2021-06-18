@@ -75,7 +75,6 @@ namespace FitPETZ.Controllers
             db.SaveChanges();
 
             TempData["activeEmail"] = user.ID;
-            Console.WriteLine(TempData["activeEmail"]);
             return RedirectToAction("UserInfo");
         }
         public IActionResult UserInfo()

@@ -36,25 +36,30 @@ namespace FitPETZ.Controllers
             var model = new UserIndexViewModel
             {
                 User = user,
-                Pet = db.Pets.Single(u => u.UserID == (string) TempData["ActiveUser"]),
-                Teams = db.Teams.ToList(),
+                Pet = db.Pets.Single(p => p.UserID == user.ID),
             };
             if (model.User.TeamID != null)
+            {
+                model.Team = db.Teams.Single(t => t.ID == user.TeamID);
                 model.Users = db.Users.Where(u => u.TeamID == model.User.TeamID).ToList();
+            }
             
             SetActiveUser((string) TempData["ActiveUser"]);
             return View(model);
         }
 
-        [Route("User/CompleteChallenge/{chID:int}")]
         public IActionResult CompleteChallenge(int chID)
         {
-            var ch = db.Challenges.ToList().Single(c => c.ID == chID);
+            var ch = db.Challenges.Single(c => c.ID == chID);
             ch.Completed = true;
             db.Challenges.Update(ch);
 
             var user = db.Users.Single(u => u.ID == (string) TempData["ActiveUser"]);
+
             NewChallenge(user);
+            user.Petokens += ch.Reward;
+            db.Users.Update(user);
+            db.SaveChanges();
             
             SetActiveUser((string) TempData["ActiveUser"]);
             return RedirectToAction("Index", "User");
